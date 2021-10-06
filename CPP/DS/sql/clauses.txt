@@ -1,0 +1,28 @@
+clauses 
+WHERE clause to  filter data
+
+ORDER clause to sort data 
+
+AS clause fro alias eg firstname as name or first ame as "my name" or 'my name'
+
+DISTICT  for unique vlaue appearing only once select distinct column1 column2 from customers 
+
+IN clause when u wna tot compare attributes with list of values select 8 where city in('a','b','c') to negate not in
+
+BETWEEN clause where points between 1000 and 2000 -- where points>=1000 and points<=3000
+
+LIKE  to find patterns using % _  %f ,f%, _y,y_ , %f%
+
+REGEXP helps us find more complex patterns using ^(start of the string) & (end of the string) ,'x|y',[abc]x(ax,bx,cx),i[ln](il,in),^ey|se
+
+NULL where x quantity is null
+
+limit 3 only first 3 rows are returned . limit 3,3 first 3 is dropped and next 3 rows are returned
+
+JOIN by default inner join , explicit declaration  for outer join ->left join, right join. other joins are implicit join (using from multiple tables and where clause), cross join , if two table are to be joined use two join statements , if there are two primary keys use and keyword in on x=y and a=b,table joining itself self join which different alias, natural join it automatically join the tables based on common column 
+
+USING CLAUSE  when joins are used excessively we use using keyword for on statement instead of on we using using(name of the column we join the table ) for this column nae ha to be ,same using(x,y) for composite keys(two primary keys)
+
+UPDATE  update x set (parameter name) y =z where primary key = a
+  
+DELETE delete from table_name where clause use subquery if required
